@@ -1,4 +1,3 @@
-list1 = [10, 20, 4, 111, 22, 45]
-list1.sort()
-print("Largest element is:", list1[-1])
-
+import random
+random_list=random.sample(range(10,50),6)
+print(random_list)
