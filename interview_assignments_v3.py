@@ -125,32 +125,37 @@ class InterviewAssignmentsV3(BaseCase):
         self.assert_element("div.question-content-header .header", timeout=10)
         self._print(self.get_text("div.question-content-header .header")) 
 
-        # left,right,left,right,left,right 
+        # Clicking left image 
         self.click_nth_visible_element('div.images-wrapper .question-image', 1)
         self.assert_element("div.question-buttons .primary-button")
         self.click("div.question-buttons .primary-button")
         self.wait(2)
 
+        # clicking right image
         self.click_nth_visible_element('div.images-wrapper .question-image', 2)
         self.assert_element("div.question-buttons .primary-button")
         self.click("div.question-buttons .primary-button")
         self.wait(2)
 
+        # Clicking left image
         self.click_nth_visible_element('div.images-wrapper .question-image', 1)
         self.assert_element("div.question-buttons .primary-button")
         self.click("div.question-buttons .primary-button")
         self.wait(2)
-
+        
+        # Clicking right image
         self.click_nth_visible_element('div.images-wrapper .question-image', 2)
         self.assert_element("div.question-buttons .primary-button")
         self.click("div.question-buttons .primary-button")
         self.wait(2)
 
+        # Clicking left image
         self.click_nth_visible_element('div.images-wrapper .question-image', 1)
         self.assert_element("div.question-buttons .primary-button")
         self.click("div.question-buttons .primary-button")
         self.wait(2)
 
+        # Clicking right image
         self.click_nth_visible_element('div.images-wrapper .question-image', 2)
         self.assert_element("div.question-buttons .primary-button")
         self.click("div.question-buttons .primary-button")
@@ -159,17 +164,20 @@ class InterviewAssignmentsV3(BaseCase):
         self.assert_element("div.question-content-header .header", timeout=10)
         self._print(self.get_text("div.question-content-header .header"))
 
+        # Selecting from common preferences
         self.click_nth_visible_element('div.selections .selection', 3)
         self.click_nth_visible_element('div.selections .selection', 5)
         self.click_nth_visible_element('div.selections .selection', 9)
         self.wait(2)
 
+        # Find the show fingerprint button and click on it
         self.assert_element('#show-fingerprint-for-btn--auto')
         self.click('#show-fingerprint-for-btn--auto')
         self.wait(2)
 
         self._print(self.get_text("div.result-wrapper .result-title"))
 
+        # Find the home button and click on it
         self.assert_element("button.primary.primary-button")
         self.click("button.primary.primary-button")
         self.wait(2)
