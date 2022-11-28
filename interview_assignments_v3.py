@@ -131,7 +131,7 @@ class InterviewAssignmentsV3(BaseCase):
         self.click("div.question-buttons .primary-button")
         self.wait(2)
 
-        # clicking right image
+        # Clicking right image
         self.click_nth_visible_element('div.images-wrapper .question-image', 2)
         self.assert_element("div.question-buttons .primary-button")
         self.click("div.question-buttons .primary-button")
