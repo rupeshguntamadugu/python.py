@@ -118,7 +118,7 @@ class InterviewAssignmentsV3(BaseCase):
 
         # Find Discover My Fingerprint button and click on it
         self._print("Finding Discover My Fingerprint button and clicking it")
-        self.assert_element("#discover", timeout=15)
+        self.assert_element("#discover", timeout=30)
         self.click("#discover")
         self.wait(2)
 
